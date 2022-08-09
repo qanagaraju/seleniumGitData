@@ -24,8 +24,6 @@ public class Login_Service
 		@Given("user start home page")
 		public void user_start_home_page() {
 		    
-		
-		
 			
 			
 		}
@@ -36,8 +34,8 @@ public class Login_Service
 			
 			login = PageFactory.initElements(BrowserDriver.getCurrentDriver(), Login_Service_Elements.class);
 			 
-			login.insertUserName("qatrainer");
-			login.insertPassword("admin123");
+			login.insertUserName(reader.get_username());
+			login.insertPassword(reader.get_password());
 		}
 		 
 		 
